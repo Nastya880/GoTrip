@@ -272,10 +272,12 @@ body {
 .customers {
     margin-bottom: 233px;
     border: 4px solid rgb(58, 4, 255);
+    display: flex;
+    column-gap: 68px;
 }
 
 .customers-image {
-    max-width: 478px;
+    max-width: 546px;
     border: 4px solid rgb(58, 4, 255);
 }
 
