@@ -182,6 +182,9 @@ body {
     overflow-x: hidden; /* Убирает скролл для вышедшего за пределы экрана */
     margin-bottom: 200px;
     border: 8px solid rgb(0, 225, 255);
+
+    display: flex;
+    column-gap: 50px;
 }
 
 .destinations-content {
@@ -191,7 +194,7 @@ body {
 
 .destinations-slider {
     width: 1110px;
-    flex-shrink: 0; /* Чтобы блок не сжимался при уменьшении разрешения */
+    flex-shrink: 0;
     border: 3px solid rgb(0, 255, 42);
 }
 
@@ -237,7 +240,7 @@ body {
     margin-top: 27px;
 }
 
-.slider-btn{
+.slider-btn {
     position: absolute;
     top: 50%;
     z-index: 5;
@@ -251,13 +254,17 @@ body {
     align-items: center;
 }
 
-.slider-btn-prev{
+.slider-btn-prev {
     left: -27px;
     padding-left: 26px;
     justify-content: flex-start;
+    z-index: 0;
 }
 
-.slider-btn-next{
+.slider-btn-next {
+    right: -27px;
+    padding-right: 26px;
+    justify-content: flex-end;
 }
 
 /* Customers */
