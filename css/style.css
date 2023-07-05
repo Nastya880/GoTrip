@@ -2,14 +2,24 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #E5E5E5;
     color: #0F1F1C;
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
 }
 
 .container {
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
 .header {
@@ -29,14 +39,14 @@ body {
 
 .header-image {
     position: relative;
-    flex-grow: 1; /*Определяет как много свободного пространства во flex назначено тек.элем*/
+    flex-grow: 1;
     pointer-events: none;
     max-width: 830px;
 }
 
 .header-content {
     max-width: 592px;
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
     position: relative;
     z-index: 1;
 }
@@ -44,7 +54,7 @@ body {
 .header-image img {
     position: absolute;
     max-width: none;
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
     top: -180px;
     right: -87px;
     width: 894px;
@@ -90,12 +100,22 @@ body {
 .navigation-item {
     display: flex;
     column-gap: 80px;
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
 }
 
 .navigation-list a {
     position: relative;
-    border: 1px solid rgb(243, 243, 204);
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid rgb(243, 243, 204); */
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navigation-list a:hover {
+    text-decoration: underline;
 }
 
 .navigation-user {
@@ -104,17 +124,18 @@ body {
     column-gap: 25px;
     font-size: 15px;
     font-weight: 500;
-    border: 2px solid rgb(255, 0, 0);
+    /* border: 2px solid rgb(255, 0, 0); */
 }
 
 .logo-title {
     font-size: 20px;
     color: #FFFFFF;
     font-weight: 700;
-    border: 4px dotted rgb(29, 202, 245);
+    /* border: 4px dotted rgb(29, 202, 245); */
 }
 
 .logo-title a {
+    text-decoration: none;
     color: inherit !important;
 }
 
@@ -127,7 +148,7 @@ body {
     color: #FFFFFF !important;
     display: inline-block;
     padding: 13px 43px;
-    border: 4px solid rgb(0, 255, 42);
+    /* border: 4px solid rgb(0, 255, 42); */
     font-size: 15px;
     border-radius: 100px;
 }
@@ -239,7 +260,7 @@ body {
     position: absolute;
     top: 50%;
     z-index: 5;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     display: block;
     width: 68px;
     height: 68px;
@@ -253,7 +274,6 @@ body {
     left: -27px;
     padding-left: 26px;
     justify-content: flex-start;
-    z-index: 0;
 }
 
 .slider-btn-next {
